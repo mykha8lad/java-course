@@ -1,5 +1,6 @@
 package Less20_08_24;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /** Создайте класс «Страна». Необходимо хранить в полях
@@ -31,7 +32,7 @@ public class Country {
         this(nameCountry, nameContinent);
         this.phoneCountryCode = phoneCountryCode;
         this.nameCapital = nameCapital;
-        this.citiesNames = citiesNames;
+        this.citiesNames = Arrays.copyOf(citiesNames, citiesNames.length);
         this.numberOfResidents = numberOfResidents;
     }
 
